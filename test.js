@@ -54,7 +54,7 @@ process.stdin.on("keypress", function(ch, key) {
 });
 
 function commandAll(commandName, args) {
-  virtualSphero.virtualSpheroNames.forEach(spheroName => {
+  virtualSphero.getNames().forEach(spheroName => {
     virtualSphero.command(spheroName, commandName, args);
   });
 }
